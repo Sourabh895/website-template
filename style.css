@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ....Container....*/
+.container {
+    height: 50px;
+    background-color: #263c41;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    margin-bottom: 10px;
+    text-shadow: 2px 5px 5px 6px rgb(104, 104, 104);
+}
+
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 800px;
+}
+
+i {
+    color: #f0f6f6;
+    font-size: 1.5rem;
+}
+
+ul li {
+    list-style: none;   
+}
+
+.container ul a {
+    color: #f0f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    text-decoration: none;
+    font-weight: 100;
+} 
+
+
+/* ....Heading .....*/
+.heading {
+    padding-top: 60px;
+    height: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: #f2f4f3;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+} 
+
+.heading i{
+    color: rgb(69, 114, 196);
+    font-size: 0.8rem;
+}
+
+span {
+    color: rgb(69, 114, 196);
+}
+
+
+/*..... Carousel....*/
+.carousel {
+    width: 100%;
+    height: 600px;
+     margin: 0px auto;
+    background-image: url(./images/iphone.jpg);
+    background-size: cover;
+    animation: carosel  infinite;
+    animation-duration: 5s;
+    
+}
+
+@keyframes carosel {
+    0% {
+        background-image: url(./images/iphone-2.jpg);
+    background-size: cover;
+    }
+
+   25% {
+       background-image: url(./images/iphone-3.jpg);
+       background-size: cover;
+   }
+
+
+   50% {
+    background-image: url(./images/iphone-4.jpg);
+    background-size: cover;
+   }
+  
+   
+75%{
+    background-image: url(./images/iphone-5.jpg);
+    background-size: cover;
+}
+
+85%{
+    background-image: url(./images/iphone.jpg);
+    background-size: cover;
+
+}
+
+
+ 100% {
+    background-image: url(./images/iphone-7.jpg);
+    background-size: cover;
+ }   
+}
+
+
+/*....Cards-Heading....*/
+.cards-heading {
+    width: 90vw;
+    text-align: center;
+    margin: 20px auto;
+    padding-bottom: 5px;
+}
+
+.cards-heading h2 {
+    color: #003049;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid #003049;
+}
+
+
+/*..... Cards....*/
+.cards {
+     width: 90vw;
+     margin: 20px auto;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 20px;
+     align-items: center;
+     font-family: 'Montserrat', sans-serif;
+}
+
+article figure {
+    width: 250px;
+}
+
+article figure img {
+   width: 250px;
+   height: 250px;
+}
+
+figcaption {
+   text-align: center;
+}
+
+article h3 {
+   font-size: 1.2rem;
+   padding: 5px 0px;
+  
+}
+
+article p {
+   font-size: 0.9rem;
+   padding: 6px;
+}
+
+article span {
+    display: block;
+    font-size: 1.5rem;
+    color: rgb(245, 231, 42);
+    font-weight: bolder;
+}
+
+article button {
+   font-size: 0.7rem;
+   padding: 5px 30px;
+   margin-bottom: 10px;
+   margin-top: 5px;
+}
+
+article {
+   transition: all 0.3s;
+   box-shadow: 0px 2px 5px rgb(104, 104, 104);
+}
+
+article:hover {
+ transform: scale(1.02);
+ cursor: pointer;
+}
+
+
+/*.... Bottom....*/
+.bottom {
+    margin-left: 20px;
+    width: 100%;
+    background-color: #f2f4f3;
+    padding: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/*......Footer.....*/
+footer {
+    width: 99vw;
+    height: 50px;
+    margin: 5px auto;
+    background-color: #20292b;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    color: #f0f6f6;
+    font-weight: 100;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f0f6f6;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
